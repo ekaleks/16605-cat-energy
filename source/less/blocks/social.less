@@ -1,0 +1,153 @@
+.social {
+  padding-top: 19px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid @border-grey;
+  border-top: 1px solid @border-grey;
+  background-color: @grey-background;
+  color: @grey-font;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+}
+
+.social__icon-vkontakte {
+  width: 20px;
+  height: 20px;
+}
+
+.social__icon-vkontakte:hover {
+  fill: @green;
+}
+
+.social__icon-vkontakte:active {
+  opacity: 0.3;
+}
+
+.social__icon-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.social__icon-instagram:hover {
+  fill: @green;
+}
+
+.social__icon-instagram:active {
+  opacity: 0.3;
+}
+
+.social__icon-facebook {
+  width: 20px;
+  height: 20px;
+}
+
+.social__icon-facebook:hover {
+  fill: @green;
+}
+
+.social__icon-facebook:active {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .social__list {
+    width: 140px;
+    justify-content: space-between;
+  }
+
+  .social__item {
+    width: 28px;
+    height: 28px;
+    margin-left: 16px;
+    margin-right: 8px;
+  }
+
+  .social__link {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social__icon-vkontakte {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social__icon-instagram {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social__icon-facebook {
+    width: 28px;
+    height: 28px;
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  .social__list {
+    justify-content: space-between;
+  }
+
+  .social__item {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__link {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__icon-vkontakte {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__icon-instagram {
+    width: 25px;
+    height: 25px;
+  }
+
+  .social__icon-facebook {
+    width: 25px;
+    height: 25px;
+  }
+}
