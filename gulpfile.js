@@ -32,50 +32,50 @@ gulp.task("css", function () {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-     .pipe(posthtml([
-       include()
-     ]))
-     .pipe(gulp.dest("build"));
-     });
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("build"));
+});
 
 gulp.task("image", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
-     .pipe(imagemin([
-       imagemin.optipng({optimizationLevel: 3}),
-       imagemin.jpegtran({progressive: true}),
-       imagemin.svgo()
-     ]))
-     .pipe(gulp.dest("build/img"));
-    });
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+  .pipe(gulp.dest("build/img"));
+});
 
 gulp.task("webp", function () {
-  return gulp.src("source/**/*.{png,jpeg}")
-     .pipe(webp({
-       quality: 90
-     }))
-     .pipe(gulp.dest("source/img"));
-     });
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({
+      quality: 90
+    }))
+  .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("sprite", function () {
   return gulp.src(["source/img/icon-vk-mobile.svg", "source/img/htmlacademy.svg", "source/img/icon-insta.svg", "source/img/icon-fb.svg"])
-  .pipe(svgstore({
-    inlineSvg: true 
-  }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"));
-});    
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
+});
 
-gulp.task('copy', function() {
+gulp.task("copy", function() {
 	return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{png,jpg,svg,webp}",
 		"source/js/**/*.js",
-		"source/css/**/*.css",
+    "source/css/**/*.css",
 		"source/*.html"
-  ], {
-		base: 'source'
+  ],{
+		base: "source"
 	})
-	.pipe(gulp.dest('build'));
+	  .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function() {
@@ -90,7 +90,6 @@ gulp.task("server", function () {
     cors: true,
     ui: false
   });
-
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });

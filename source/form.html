@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы</title>
-    <link rel="preload" href="oswaldmedium.woff2" as="font">
-    <link rel="preload" href="oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,9 +18,11 @@
       <nav class="main-nav">
         <div class="main-nav__logo">
           <a class="main-nav__link-image" href="index.html" title="Логотип"></a>
-          <a class="main-nav__toggle main-nav__toggle--cross" href = "#" title="Кнопка открытия и закрытия меню"></a>
+          <a class="main-nav__toggle main-nav__toggle--burger" href="#" title="Кнопка открытия и закрытия меню"></a>
+          <!-- main-nav__toggle--cross класс для появления крестика -->
         </div>
         <ul class="main-nav__list site-list">
+          <!-- site-list--close класс для исчезновения меню-->
           <li class="site-list__item">
             <a class="site-list__link" href="index.html" title="Пункт меню-главная">Главная</a>
           </li>
@@ -79,7 +81,7 @@
               </li>
               <li class="form-selection__item-contacts">
                 <label class="form-selection__label-contacts form-selection__label-contacts--tel" for="phone">Телефон:*</label>
-                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="tel" placeholder="8 (960) 960-60-90" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" title="Поле ввода телефона">
+                <input class="form-selection__field-contacts form-selection__field-contacts--phone" type="tel" placeholder="8 (960) 900-60-90" id="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" title="Поле ввода телефона">
               </li>
             </ul>
           </fieldset>
@@ -114,7 +116,7 @@
                 <button class="form-selection__button"  title="Кнопка отправки формы">Отправить заявку</button>
               </li>
               <li class="form-selection__item-submit">
-                <small class="form-selection__note">* — Обязательные поля</small>
+                <div class="form-selection__note">* — Обязательные поля</div>
               </li>
             </ul>
           </fieldset>
@@ -133,39 +135,39 @@
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html" title="Логотип"></a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - вконтакте">
-              <svg class="social__icon-vkontakte" width="20" height="20">
-                <use xlink:href="#icon-vk-mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - инстаграмм">
-              <svg class="social__icon-instagram" width="20" height="20">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - фэйсбук ">
-              <svg class="social__icon-facebook" width="20" height="20">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
-          <svg class="copyright__logo-icon" viewBox="0 0 50 65">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - вконтакте">
+                <svg class="social__icon-vkontakte" width="20" height="20">
+                  <use xlink:href="#icon-vk-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - инстаграмм">
+                <svg class="social__icon-instagram" width="20" height="20">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - фэйсбук ">
+                <svg class="social__icon-facebook" width="20" height="20">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
+            <svg class="copyright__logo-icon" viewBox="0 0 50 65">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>

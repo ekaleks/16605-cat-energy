@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог продукции</title>
-    <link rel="preload" href="oswaldmedium.woff2" as="font">
-    <link rel="preload" href="oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,14 +18,16 @@
       <nav class="main-nav">
         <div class="main-nav__logo">
           <a class="main-nav__link-image" title="Логотип" href="index.html"></a>
-          <a class="main-nav__toggle main-nav__toggle--cross" href = "#" title="Кнопка открытия и закрытия меню"></a>
+          <a class="main-nav__toggle main-nav__toggle--burger" href="#" title="Кнопка открытия и закрытия меню"></a>
+          <!-- main-nav__toggle--cross класс для появления крестика -->
         </div>
         <ul class="main-nav__list site-list">
+          <!-- site-list--close класс для исчезновения меню-->
           <li class="site-list__item">
             <a class="site-list__link"  href="index.html" title="Пункт меню-главная">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link site-list__item--active" href="catalog.html" title="Пункт меню-каталог продукции">Каталог продукции</a>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="catalog.html" title="Пункт меню-каталог продукции">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html" title="Пункт меню-подбор программы">Подбор программы</a>
@@ -39,11 +41,11 @@
         <article class="catalog__goods goods">
           <a class="goods__link" href="#" title="Товар - корм с курицей 500гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp, img/chicken-small-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
               <img class="goods__image" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Корм с курицей">
             </picture>
@@ -70,11 +72,11 @@
         <article class="catalog__goods goods goods--even">
           <a class="goods__link" href="#" title="Товар - корм с курицей 1000гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp, img/chicken-big-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
               <img class="goods__image" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobilet@2x.jpg 2x" alt="Корм с курицей">
             </picture>
@@ -101,11 +103,11 @@
         <article class="catalog__goods goods">
           <a class="goods__link" href="#" title="Товар - корм с рыбой 500гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-small-mobile@1x.webp, img/fish-small-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
               <img class="goods__image" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Корм с рыбой">
             </picture>
@@ -132,11 +134,11 @@
         <article class="catalog__goods goods goods--even">
           <a class="goods__link" href="#" title="Товар - корм с рыбой 1000гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fish-big-mobile@1x.webp, img/fish-big-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/fish-big-desktop@1x.png 1x, img/fish-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png 1x, img/fish-big-tablet@2x.png 2x">
               <img class="goods__image" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Корм с рыбой">
             </picture>
@@ -163,11 +165,11 @@
         <article class="catalog__goods goods">
           <a class="goods__link" href="#" title="Товар - корм с гречкой 500гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp, img/buckwheat-small-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@2x.png 2x">
               <img class="goods__image" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Корм с гречкой">
             </picture>
@@ -194,11 +196,11 @@
         <article class="catalog__goods goods goods--even">
           <a class="goods__link" href="#" title="Товар - корм с гречкой 1000гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp, img/buckwheat-big-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
               <img class="goods__image" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Корм с гречкой">
             </picture>
@@ -225,11 +227,11 @@
         <article class="catalog__goods goods">
           <a class="goods__link" href="#" title="Товар - корм с рисом 500гр">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/rice-small-mobile@1x.webp, img/rice-small-mobile@2x.webp 2x">
 
-              <source media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 1300px)" srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
               <img class="goods__image" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Корм с рисом">
             </picture>
@@ -250,11 +252,11 @@
               <td class="goods__cell-field">Цена</td>
               <td class="goods__cell-value">500 Р.</td>
             </tr>
-            </table>
-            <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
+          </table>
+          <a class="goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
         </article>
         <div class="catalog__range">
-          <p class="catalog__text-strong"><strong>Показать еще 100500 товаров</strong></p>
+          <p class="catalog__text-strong">Показать еще 100500 товаров</p>
           <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
           <a class="catalog__button  catalog__button--grey" href="" title="Кнопка - показать все товары">Показать все</a>
         </div>
@@ -267,7 +269,7 @@
               <caption class="additional-goods__subtitle"> Сахарозаменитель</caption>
               <tr class="additional-goods__row">
                 <td class="additional-goods__cell-field">1 упаковка (100 г)</td>
-                <td class="additional-goods__cell-value">200 p.</td>
+                <td class="additional-goods__cell-value">200 Р.</td>
               </tr>
             </table>
             <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
@@ -277,7 +279,7 @@
               <caption class="additional-goods__subtitle">Питьевая вода</caption>
               <tr class="additional-goods__row">
                 <td class="additional-goods__cell-field">5 литров</td>
-                <td class="additional-goods__cell-value"> 50 p.</td>
+                <td class="additional-goods__cell-value"> 50 Р.</td>
               </tr>
             </table>
             <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
@@ -287,7 +289,7 @@
               <caption class="additional-goods__subtitle">Молоко</caption>
               <tr class="additional-goods__row">
                 <td class="additional-goods__cell-field">1 литр</td>
-                <td class="additional-goods__cell-value">100 p.</td>
+                <td class="additional-goods__cell-value">100 Р.</td>
               </tr>
             </table>
             <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
@@ -297,7 +299,7 @@
               <caption class="additional-goods__subtitle">Витамины</caption>
               <tr class="additional-goods__row">
                 <td class="additional-goods__cell-field">1 упаковка (30 г)</td>
-                <td class="additional-goods__cell-value">300 p.</td>
+                <td class="additional-goods__cell-value">300 Р.</td>
               </tr>
             </table>
             <a class="additional-goods__button button" href="#" title="Кнопка - заказать">Заказать</a>
@@ -321,39 +323,39 @@
       </div>
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html" title="Логотип"></a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - вконтакте">
-              <svg class="social__icon-vkontakte" width="20" height="20">
-                <use xlink:href="#icon-vk-mobile"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - инстаграмм">
-              <svg class="social__icon-instagram" width="20" height="20">
-                <use xlink:href="#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#" title="Кнопка - фэйсбук ">
-              <svg class="social__icon-facebook" width="20" height="20">
-                <use xlink:href="#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
-          <svg class="copyright__logo-icon" viewBox="0 0 50 65">
-            <use xlink:href="#htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - вконтакте">
+                <svg class="social__icon-vkontakte" width="20" height="20">
+                  <use xlink:href="#icon-vk-mobile"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - инстаграмм">
+                <svg class="social__icon-instagram" width="20" height="20">
+                  <use xlink:href="#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" title="Кнопка - фэйсбук ">
+                <svg class="social__icon-facebook" width="20" height="20">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка на сайт htmlacademy">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" title="Ссылка-картинка на сайт htmlacademy">
+            <svg class="copyright__logo-icon" viewBox="0 0 50 65">
+              <use xlink:href="#htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
