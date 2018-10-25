@@ -66,20 +66,20 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("copy", function() {
-	return gulp.src([
+  return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{png,jpg,svg,webp}",
-		"source/js/**/*.js",
+    "source/js/**/*.js",
     "source/css/**/*.css",
-		"source/*.html"
+    "source/*.html"
   ],{
-		base: "source"
-	})
-	  .pipe(gulp.dest("build"));
+    base: "source"
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function() {
-	return del("build");
+  return del("build");
 });
 
 gulp.task("server", function () {

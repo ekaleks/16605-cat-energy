@@ -11,6 +11,8 @@
 
 .form-selection__wrapper-input {
   margin: 0;
+  font-size: 16px;
+  line-height: 18px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 13px;
@@ -38,12 +40,15 @@
 .form-selection__label-input {
   .oswald;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 1px;
   padding-top: 17px;
   padding-bottom: 16px;
-  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
   color: @black-label-font;
+  margin: 0;
   border: none;
   outline: none;
 }
@@ -54,8 +59,12 @@
   padding-bottom: 13px;
   padding-right: 0;
   padding-left: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
   margin: 0;
   text-transform: uppercase;
+  color: @black-label-font;
   border: 1px solid @border-grey;
   outline: none;
 }
@@ -72,60 +81,14 @@
   border: 1px solid @invalid-form-color;
 }
 
-.form-selection__field-input:-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-input::-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-input::-webkit-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
-.form-selection__field-input:-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font !important/*ie11*/;
-  text-transform: uppercase;
-}
-
-.form-selection__field-input::-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
 .form-selection__field-input::placeholder {
   .oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 200;
+  font-weight: normal;
   color: @black-label-font;
   text-transform: uppercase;
+  opacity: 1;
 }
 
 .form-selection__label-input--name {
@@ -160,7 +123,7 @@
   padding-right: 20px;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 18px;
   border: 1px solid @border-grey;
   outline: none;
@@ -258,7 +221,7 @@
 .form-selection__title-contacts {
   width: 210px;
   font-size: 24px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 24px;
   color: @black;
   padding-right: 20px;
@@ -283,11 +246,17 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
+  list-style: none;
 }
 
 .form-selection__label-contacts {
+  .oswald;
   text-transform: uppercase;
   color: @black-label-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+  padding-right: 1px;
 }
 
 .form-selection__label-contacts--mail {
@@ -299,7 +268,12 @@
 }
 
 .form-selection__field-contacts {
+  .oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
+  color: @black-label-font;
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 15px;
@@ -319,60 +293,14 @@
   border: 1px solid @invalid-form-color;
 }
 
-.form-selection__field-contacts:-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-contacts::-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-contacts::-webkit-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
-.form-selection__field-contacts:-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font !important/*ie11*/;
-  text-transform: uppercase;
-}
-
-.form-selection__field-contacts::-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
 .form-selection__field-contacts::placeholder {
   .oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 200;
+  font-weight: normal;
   color: @black-label-font;
   text-transform: uppercase;
+  opacity: 1;
 }
 
 .form-selection__field-contacts--mail {
@@ -423,7 +351,7 @@
 
 .form-selection__title-comments {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 24px;
   color: @black;
   padding-right: 22px;
@@ -440,8 +368,9 @@
   min-height: 40px;
   border: 1px solid @border-grey;
   outline: none;
+  .oswald;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 18px;
   color: @black-label-font;
   text-transform: uppercase;
@@ -455,60 +384,14 @@
   border: 1px solid #444444;
 }
 
-.form-selection__field-comments:-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-contacts::-moz-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-  opacity: 1;
-}
-
-.form-selection__field-comments::-webkit-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
-.form-selection__field-comments:-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font !important/*ie11*/;
-  text-transform: uppercase;
-}
-
-.form-selection__field-comments::-ms-input-placeholder {
-  .oswald;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 200;
-  color: @black-label-font;
-  text-transform: uppercase;
-}
-
 .form-selection__field-comments::placeholder {
   .oswald;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 200;
+  font-weight: normal;
   color: @black-label-font;
   text-transform: uppercase;
+  opacity: 1;
 }
 
 .form-selection__wrapper-checkbox {
@@ -524,7 +407,7 @@
 
 .form-selection__title-checkbox {
   font-size: 24px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 24px;
   color: @black;
   padding-right: 22px;
@@ -636,7 +519,7 @@
   outline: none;
   border: none;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -651,7 +534,7 @@
   text-align: center;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: normal;
   line-height: 16px;
   padding-left: 0;
 }
@@ -681,68 +564,26 @@
   .form-selection__label-input {
     padding-top: 12px;
     padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form-selection__field-input {
-    padding-top: 13px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 11px;
     padding-left: 19px;
-  }
-
-  .form-selection__field-input:-moz-placeholder {
-    .oswald;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-input::-moz-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-input::-webkit-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-input:-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-input::-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
   }
 
   .form-selection__field-input::placeholder {
     .oswald;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 200;
+    font-weight: normal;
     color: @black-label-font;
     text-transform: uppercase;
+    opacity: 1;
   }
 
   .form-selection__label-input--name {
@@ -778,7 +619,7 @@
     padding-right: 67px;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
     border: none;
     outline: none;
@@ -858,7 +699,7 @@
   .form-selection__title-contacts {
     width: 590px;
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 0;
@@ -877,7 +718,7 @@
     padding-right: 40px;
     margin: 0;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
   }
 
@@ -889,6 +730,8 @@
   }
 
   .form-selection__label-contacts {
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
     color: @black-label-font;
   }
@@ -902,69 +745,25 @@
   }
 
   .form-selection__field-contacts {
+    font-size: 20px;
+    line-height: 20px;
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 11px;
     padding-left: 21px;
     padding-right: 0;
     outline: none;
     border: 1px solid @border-grey;
   }
 
-  .form-selection__field-contacts:-moz-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-contacts::-moz-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-contacts::-webkit-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-contacts:-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-contacts::-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
   .form-selection__field-contacts::placeholder {
     .oswald;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 200;
+    font-weight: normal;
     color: @black-label-font;
     text-transform: uppercase;
+    opacity: 1;
   }
 
   .form-selection__field-contacts--mail {
@@ -995,7 +794,7 @@
 
   .form-selection__title-comments {
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 40px;
@@ -1013,55 +812,8 @@
     min-height: 40px;
     border: 1px solid @border-grey;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 30px;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-comments:-moz-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-comments::-moz-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-    opacity: 1;
-  }
-
-  .form-selection__field-comments::-webkit-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-comments:-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: @black-label-font;
-    text-transform: uppercase;
-  }
-
-  .form-selection__field-comments::-ms-input-placeholder {
-    .oswald;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
     color: @black-label-font;
     text-transform: uppercase;
   }
@@ -1069,8 +821,8 @@
   .form-selection__field-comments::placeholder {
     .oswald;
     font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
+    line-height: 30px;
+    font-weight: normal;
     color: @black-label-font;
     text-transform: uppercase;
   }
@@ -1089,7 +841,7 @@
 
   .form-selection__title-checkbox {
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 40px;
@@ -1187,7 +939,7 @@
     outline: none;
     border: none;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1203,7 +955,7 @@
     display: block;
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 16px;
     padding: 10px;
     width: 180px;
@@ -1243,12 +995,16 @@
   .form-selection__label-input {
     padding-top: 17px;
     padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form-selection__field-input {
+    font-size: 20px;
+    line-height: 20px;
     padding-left: 18px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid @border-grey;
   }
 
@@ -1294,7 +1050,7 @@
     max-height: 193px;
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
     border: 1px solid @border-grey;
     outline: none;
@@ -1375,7 +1131,7 @@
   .form-selection__title-contacts {
     width: 595px;
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 39px;
@@ -1397,7 +1153,7 @@
     padding-right: 0;
     margin: 0;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
   }
 
@@ -1414,6 +1170,8 @@
   .form-selection__label-contacts {
     text-transform: uppercase;
     color: @black-label-font;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form-selection__label-contacts--mail {
@@ -1426,8 +1184,10 @@
 
   .form-selection__field-contacts {
     text-transform: uppercase;
-    padding-top: 15px;
-    padding-bottom: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 9px;
+    padding-bottom: 11px;
     padding-left: 19px;
     padding-right: 0;
     outline: none;
@@ -1438,7 +1198,7 @@
     .oswald;
     font-size: 20px;
     line-height: 20px;
-    font-weight: 200;
+    font-weight: normal;
     color: @black-label-font;
   }
 
@@ -1470,7 +1230,7 @@
 
   .form-selection__title-comments {
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 40px;
@@ -1484,14 +1244,14 @@
     margin-top: 41px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 3px;
-    padding-bottom: 128px;
+    padding-top: 5px;
+    padding-bottom: 129px;
     width: 1180px;
     min-height: 40px;
     border: 1px solid @border-grey;
     outline: none;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 30px;
     color: @black-label-font;
     text-transform: uppercase;
@@ -1500,7 +1260,7 @@
   .form-selection__field-comments::placeholder {
     .oswald;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 30px;
     color: @black-label-font;
     text-transform: uppercase;
@@ -1520,7 +1280,7 @@
 
   .form-selection__title-checkbox {
     font-size: 36px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 36px;
     color: @black;
     padding-right: 40px;
@@ -1618,7 +1378,7 @@
     outline: none;
     border: none;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1643,7 +1403,7 @@
     display: block;
     font-family: "Arial", "Helvetica", sans-serif;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: normal;
     line-height: 16px;
     padding: 10px;
     width: 180px;
