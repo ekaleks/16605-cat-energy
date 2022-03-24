@@ -42,7 +42,7 @@ gulp.task("image", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
   .pipe(gulp.dest("build/img"));
