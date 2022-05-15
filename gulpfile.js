@@ -6,8 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify= require("gulp-csso");
-var rename= require("gulp-rename");
+var minify = require("gulp-csso");
+var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var del = require("del");
@@ -42,7 +42,7 @@ gulp.task("image", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
-      imagemin.jpegtran({progressive: true}),
+      imagemin.mozjpeg({progressive: true}),
       imagemin.svgo()
     ]))
   .pipe(gulp.dest("build/img"));
@@ -94,6 +94,6 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("build", gulp.series("clean","copy","css","sprite","html","image"));
+gulp.task("build", gulp.series("clean","copy","css","sprite","html", "webp", "image"));
 
 gulp.task("start", gulp.series("css", "server"));

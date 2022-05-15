@@ -5,22 +5,22 @@
   "description": "Личный проект «Кэт энерджи» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.1.x",
-    "browser-sync": "2.24.x",
-    "del": "^3.0.0",
-    "gulp": "^4.0.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-less": "4.0.x",
-    "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
-    "gulp-svgstore": "^7.0.0",
-    "gulp-webp": "^3.0.0",
-    "posthtml-include": "^1.2.0",
-    "stylelint": "9.6.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.7.4",
+    "stylelint": "^14.8.2",
+    "stylelint-config-htmlacademy": "^0.1.12"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -43,6 +43,6 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "8.12"
+    "node": "16.14.2"
   }
 }
